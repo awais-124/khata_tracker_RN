@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "828400671833",
+    "project_id": "khata-tracker",
+    "storage_bucket": "khata-tracker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828400671833:android:b83be831796a404add6548",
+        "android_client_info": {
+          "package_name": "com.example.khata_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828400671833-2tsms5a462qts05cpbalfj12f18jpfc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7cdYBao8wdJGbsS-hnbQaa87hTl3Wx8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828400671833-2tsms5a462qts05cpbalfj12f18jpfc6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "828400671833-n7n4mu1jkj6dch1phnsfmbu1aof1kr95.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.khataTracker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:828400671833:android:03332e401990d901dd6548",
+        "android_client_info": {
+          "package_name": "com.khatatracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "828400671833-2tsms5a462qts05cpbalfj12f18jpfc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7cdYBao8wdJGbsS-hnbQaa87hTl3Wx8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "828400671833-2tsms5a462qts05cpbalfj12f18jpfc6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "828400671833-n7n4mu1jkj6dch1phnsfmbu1aof1kr95.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.khataTracker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
