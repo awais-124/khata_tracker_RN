@@ -1,97 +1,141 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Khata Tracker 💰 (React Native Edition)
 
-# Getting Started
+[![React Native](https://img.shields.io/badge/React--Native-0.73-blue)](https://reactnative.dev)
+[![Firebase](https://img.shields.io/badge/Firebase-11.0-orange)](https://firebase.google.com)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+A cross-platform debt management app built with **React Native** and **Firebase**. Track loans, credit, and payments seamlessly across Android and iOS.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Features ✨
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+* 🔐 Secure authentication (Email + Google via Firebase)
+* 📝 Record debts with full details (amount, date, witness)
+* 🔍 Search & filter by person/status/date
+* 📊 Monthly debt summaries
+* 🎨 Light & dark theme switcher
+* 📄 Export debt logs as PDF
+* 🔔 Auto payment reminders via notifications
 
-```sh
-# Using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
+## Tech Stack 💪
+
+* **Frontend**: React Native
+* **Backend**: Firebase (Auth, Firestore)
+* **Navigation**: React Navigation
+* **Context API** for state management
+* **Notifications**: `react-native-push-notification`
+* **PDF Export**: `react-native-pdf`
+* **UI**: React Native Paper + Vector Icons
+
+---
+
+## Installation 🚀
+
+### Prerequisites
+
+* Node.js & Yarn or npm
+* React Native CLI environment setup
+* Firebase account
+* Android Studio / Xcode
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/awais-124/khata-tracker-RN.git
+cd khata-tracker-RN
 ```
 
-## Step 2: Build and run your app
+### 2. Install Dependencies
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+Using npm:
 
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```bash
+npm install @react-navigation/native @react-navigation/native-stack react-native-screens react-native-safe-area-context firebase @react-native-firebase/app @react-native-firebase/auth @react-native-firebase/firestore react-native-pdf react-native-vector-icons react-native-paper
 ```
 
-### iOS
+### 3. Configure Firebase
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+* Create a Firebase project
+* Enable **Email/Password** and **Google** sign-in
+* Set up **Cloud Firestore** (start in test mode)
+* Download `google-services.json` (Android) and `GoogleService-Info.plist` (iOS)
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
 
-```sh
-bundle install
+### 4. Run the App
+
+```bash
+npx react-native run-android   # for Android
+yarn ios                      # for iOS (Mac only)
 ```
 
-Then, and every time you update your native dependencies, run:
+---
 
-```sh
-bundle exec pod install
+## Folder Structure 📂
+
+```
+src/
+├── assets/
+│   ├── images/
+│   └── fonts/
+├── components/
+│   ├── AuthForm.js
+│   ├── DebtCard.js
+│   ├── DebtFilter.js
+│   ├── DebtList.js
+│   ├── DebtSummary.js
+│   ├── LoadingIndicator.js
+│   └── ThemeSwitcher.js
+├── constants/
+│   ├── app.js
+│   └── theme.js
+├── context/
+│   ├── AuthContext.js
+│   └── DebtContext.js
+├── navigation/
+│   └── AppNavigator.js
+├── screens/
+│   ├── auth/
+│   │   ├── LoginScreen.js
+│   │   ├── RegisterScreen.js
+│   │   └── ResetPasswordScreen.js
+│   ├── debts/
+│   │   ├── AddEditDebtScreen.js
+│   │   ├── DebtDetailScreen.js
+│   │   ├── DebtsScreen.js
+│   │   └── HistoryScreen.js
+│   └── SettingsScreen.js
+├── services/
+│   ├── auth.js
+│   └── debts.js
+└── App.js
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+---
 
-```sh
-# Using npm
-npm run ios
+## Environment Variables 🔒
 
-# OR using Yarn
-yarn ios
+Create a `.env` file at the project root:
+
+```env
+FIREBASE_API_KEY=your_api_key
+FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+FIREBASE_PROJECT_ID=your_project_id
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## Contributing 🤝
 
-## Step 3: Modify your app
+1. Fork the repo
+2. Create a feature branch
+3. Commit & push your changes
+4. Open a Pull Request
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## Questions?
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Open an issue or contact [@awais-124](https://github.com/awais-124)
