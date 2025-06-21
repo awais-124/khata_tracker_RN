@@ -1,8 +1,9 @@
 import React, { useState, useContext } from 'react';
 import { View, StyleSheet, KeyboardAvoidingView, Platform } from 'react-native';
-import { Button, TextInput, Text, useTheme } from 'react-native-paper';
+import { Button, TextInput, Text } from 'react-native-paper';
 import { AuthContext } from '../../context/AuthContext';
 import AuthForm from '../../components/AuthForm';
+import { useTheme } from '../../context/ThemeContext';
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');

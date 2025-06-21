@@ -4,6 +4,7 @@ import { DebtProvider } from './context/DebtContext';
 import { ThemeProvider } from './context/ThemeContext';
 import AppNavigator from './navigation/AppNavigator';
 import { PaperProvider } from 'react-native-paper';
+import { useTheme } from './context/ThemeContext';
 
 const App = () => {
   return (

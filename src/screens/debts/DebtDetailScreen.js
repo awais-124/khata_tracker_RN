@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { View, StyleSheet } from 'react-native';
-import { Card, Text, Button, useTheme } from 'react-native-paper';
+import { Card, Text, Button } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { DebtContext } from '../../context/DebtContext';
+import { useTheme } from '../../context/ThemeContext';
 
 const DebtDetailScreen = ({ route, navigation }) => {
   const { debtId } = route.params;

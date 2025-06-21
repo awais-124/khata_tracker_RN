@@ -1,14 +1,9 @@
 import React, { useState, useContext } from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
-import {
-  Button,
-  TextInput,
-  RadioButton,
-  Text,
-  useTheme,
-} from 'react-native-paper';
+import { Button, TextInput, RadioButton, Text } from 'react-native-paper';
 import { DebtContext } from '../../context/DebtContext';
 import DateTimePicker from '@react-native-community/datetimepicker';
+import { useTheme } from '../../context/ThemeContext';
 
 const AddEditDebtScreen = ({ route, navigation }) => {
   const { addDebt, updateDebt } = useContext(DebtContext);

@@ -3,12 +3,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_PROJECT_ID.firebaseapp.com',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_PROJECT_ID.appspot.com',
-  messagingSenderId: 'YOUR_SENDER_ID',
-  appId: 'YOUR_APP_ID',
+  apiKey: 'AIzaSyC3eWo8Y8Wlspt6x61SAv4LheeH4keZLmA',
+  authDomain: 'khata-tracker.firebaseapp.com',
+  projectId: 'khata-tracker',
+  storageBucket: 'khata-tracker.firebasestorage.app',
+  messagingSenderId: '828400671833',
+  appId: '1:828400671833:web:c989e0656a18e9a6dd6548',
 };
 
 const app = initializeApp(firebaseConfig);

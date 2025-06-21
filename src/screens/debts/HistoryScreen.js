@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
-import { Text, useTheme } from 'react-native-paper';
+import { Text } from 'react-native-paper';
 import { DebtContext } from '../../context/DebtContext';
 import DebtCard from '../../components/DebtCard';
+import { useTheme } from '../../context/ThemeContext';
 
 const HistoryScreen = () => {
   const { paidDebts } = useContext(DebtContext);

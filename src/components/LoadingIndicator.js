@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, ActivityIndicator, StyleSheet } from 'react-native';
-import { useTheme } from 'react-native-paper';
+import { useTheme } from '../context/ThemeContext';
 
 const LoadingIndicator = ({ size = 'large', color }) => {
   const { theme } = useTheme();
